@@ -23,8 +23,6 @@ public class StepDefination extends B {
 	public void user_is_on_the_home_page_of_asos() {
 		driver = getUrl("https://www.asos.com/");
 
-		System.out.println(titleOfWebpage());
-
 	}
 
 	@When("user Is On The Home Page Click The Men Tab #Action")
