@@ -11,13 +11,14 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features = "D:\\Eclipse\\ASOS1\\Folder\\Order_A_Coat.feature", // path of feature file
-		glue = "com.asos.ASOS1.StepDef", // path of step definition
+@CucumberOptions(features = "Folder", // path of feature file
+		glue = "com.asos.ASOS1.StepDef", // path of step definition package
 		plugin = {  "html:Report/Cucumber_Report", 
 			    "json:Report/Cucumber.json", 
 			    "pretty"}, // Prints in the console
 		monochrome = true, // Removes all the special characters
-		dryRun = false // It will check the Feature file and step definition without actually running
+		dryRun = false, // It will check the Feature file and step definition without actually running
+		stepNotifications = true
 )
 
 public class Runner extends B {
